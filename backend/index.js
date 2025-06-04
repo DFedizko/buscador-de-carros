@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const allowedOrigins = [process.env.FRONTEND_URL, "http://localhost:1337"];
+const allowedOrigins = [process.env.FRONTEND_URL];
 if (process.env.NODE_ENV !== 'production') {
     allowedOrigins.push('http://localhost:1337');
 }
