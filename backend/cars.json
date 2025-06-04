@@ -2,70 +2,70 @@
   {
     "Name": "BYD",
     "Model": "Dolphin",
-    "Image": "exemplo.png",
+    "Image": "https://www.byd.com/content/dam/byd-site/eu/electric-cars/dolphin/xl/Dolphin-exterior-04-SkiingwhiteUrbangrey-xl.jpg",
     "Price": 99990,
     "Location": "São Paulo"
   },
   {
     "Name": "Toyota",
     "Model": "Corolla",
-    "Image": "exemplo.png",
+    "Image": "https://www.toyotacomunica.com.br/wp-content/uploads/2024/12/corollaGRS_1.jpeg",
     "Price": 112000,
     "Location": "São Paulo"
   },
   {
     "Name": "Volkswagen",
     "Model": "T-Cross",
-    "Image": "exemplo.png",
+    "Image": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/2f56c67d-94c8-49a6-a83d-1f7f09f2d991_low.png",
     "Price": 118500,
     "Location": "Campinas"
   },
   {
     "Name": "Honda",
     "Model": "Civic",
-    "Image": "exemplo.png",
+    "Image": "https://cdn.autopapo.com.br/box/uploads/2018/01/12160250/honda-civic-20186.jpg",
     "Price": 105000,
     "Location": "Rio de Janeiro"
   },
   {
     "Name": "Chevrolet",
     "Model": "Onix",
-    "Image": "exemplo.png",
+    "Image": "https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/cars/2023-onix/mov/06-images/versiones-2025/onix-lt.jpg?imwidth=960",
     "Price": 85000,
     "Location": "Belo Horizonte"
   },
   {
     "Name": "Hyundai",
     "Model": "HB20",
-    "Image": "exemplo.png",
+    "Image": "https://hyundai.com.br/content/dam/hmb/product-page/novo-hyndai-hb20/design/features/modal/desktop/03-design_rodas_desk.webp",
     "Price": 79000,
     "Location": "São Paulo"
   },
   {
     "Name": "Renault",
     "Model": "Kwid",
-    "Image": "exemplo.png",
+    "Image": "https://cdn.autopapo.com.br/box/uploads/2019/10/02124939/renault-kwid-2020-indiano-732x488.jpg",
     "Price": 68990,
     "Location": "Curitiba"
   },
   {
     "Name": "Fiat",
     "Model": "Pulse",
-    "Image": "exemplo.png",
+    "Image": "https://image1.mobiauto.com.br/images/api/images/v1.0/274826611/transform/fl_progressive,f_webp,q_70,w_600",
     "Price": 96000,
     "Location": "São Paulo"
   },
   {
     "Name": "Jeep",
     "Model": "Renegade",
-    "Image": "exemplo.png",
+    "Image": "https://www.media.stellantis.com/cache/f/d/a/4/2/fda42102d74a7baa3f7f016f0c079bc33c8114ee.jpeg",
     "Price": 122000,
     "Location": "Porto Alegre"
   },
   {
     "Name": "Peugeot",
     "Model": "208",
-    "Image": "exemplo.png",
+    "Image": "https://carroscomcamanzi.com.br/wp-content/uploads/2024/07/peugeot-208-2025-argentina-1500x844.webp",
     "Price": 87500,
     "Location": "São Paulo"
   }
