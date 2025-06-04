@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import Home from "./home";
+import Home from "./Home";
 
 function App() {
   return (
