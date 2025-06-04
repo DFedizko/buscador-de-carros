@@ -72,7 +72,7 @@ const Home = () => {
 
     return (
         <main className={`text-center flex flex-col items-center px-6 pt-6 
-            ${conversationStarted ? "justify-between" : "justify-center gap-10"}`}>
+            ${conversationStarted ? "justify-between" : "justify-center"}`}>
             <PageTitle conversationStarted={conversationStarted} />
             
             <div className={`
