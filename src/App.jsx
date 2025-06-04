@@ -1,7 +1,11 @@
+import Footer from "./components/Footer";
+import Home from "./home";
+
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Home />
+      <Footer />
     </>
   );
 }

@@ -2,10 +2,32 @@
 
 @theme {
     --font-poppins: "Poppins", sans-serif;
+
+    --color-main: #FFF;
+    --color-secondary: var(--color-gray-500);
+
+    --color-main-bg: #131517;
+    --color-secondary-bg: #1F2125;
 }
 
 @layer base {
     * {
         font-family: var(--font-poppins);
+        color: var(--color-main);
+    }
+
+    body, #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: var(--color-main-bg);
+    }
+
+    main {
+        flex: 1 1 0;
+    }
+
+    button {
+        cursor: pointer;
     }
 }
