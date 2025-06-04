@@ -4,7 +4,7 @@ import PageTitle from "./components/PageTitle";
 import MessageCard from "./components/MessageCard";
 
 const Home = () => {
-    const BASE_URL = "http://localhost:3001";
+    const BASE_URL = "https://dirigia-buscador-de-carros.onrender.com";
     const [conversationStarted, setConversationStarted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [messages, setMessages] = useState([]);
