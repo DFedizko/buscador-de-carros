@@ -7,7 +7,6 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-app.use(express.json());
 
 const allowedOrigins = [process.env.FRONTEND_URL, "http://localhost:1337"];
 if (process.env.NODE_ENV !== 'production') {
@@ -23,6 +22,8 @@ app.use(cors({
     }
   }
 }));
+
+app.use(express.json());
 
 let todosOsCarros = [];
 try {
