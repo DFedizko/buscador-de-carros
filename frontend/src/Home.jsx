@@ -81,7 +81,7 @@ const Home = () => {
                 mb-18
                 ${conversationStarted 
                     ? "opacity-100 flex-grow" 
-                    : "opacity 0 max-h-0 border-none"
+                    : "opacity-0 max-h-0 border-none"
                 }
             `}>
                 <ul className="h-full w-full flex flex-col items-start p-6 gap-8 [&>*:nth-child(odd)]:self-end [&>*:nth-child(odd)]:bg-secondary-bg [&>*:nth-child(even)]:bg-tertiary-bg ">
