@@ -71,16 +71,16 @@ const Home = () => {
     }
 
     return (
-        <main className={`text-center flex flex-col items-center p-6 
+        <main className={`text-center flex flex-col items-center px-6 pt-6 
             ${conversationStarted ? "justify-between" : "justify-center gap-10"}`}>
             <PageTitle conversationStarted={conversationStarted} />
             
             <div className={`
                 w-[80%]
-                overflow-hidden
                 transition-all ease-in-out duration-1000
+                mb-18
                 ${conversationStarted 
-                    ? "opacity-100 max-h-[75vh] flex-grow" 
+                    ? "opacity-100 flex-grow" 
                     : "opacity 0 max-h-0 border-none"
                 }
             `}>
@@ -94,7 +94,7 @@ const Home = () => {
                         />
                     )}
                     {isLoading &&
-                        <li className="self-center text-sm text-secondary animate-pulse p-2">DirigIA está pensando...</li>
+                        <li className="self-center text-sm bg-transparent text-secondary animate-pulse p-2">DirigIA está procurando...</li>
                     }
                     {error && !isLoading &&
                         <li className="self-center text-sm text-red-400 p-2">{error}</li>
@@ -102,13 +102,14 @@ const Home = () => {
                     <li ref={messagesEndRef}></li>
                 </ul>
             </div>
-
-            <ChatForm
-                type="text"
-                placeholder={conversationStarted ? "Converse com DirigIA..." : "Procure o carro que está pensando..."}
-                isLoading={isLoading}
-                handleSendMessage={handleSendMessage}
-            />
+            <div className="w-full p-4 bg-main-bg fixed bottom-4">
+                <ChatForm
+                    type="text"
+                    placeholder={conversationStarted ? "Converse com DirigIA..." : "Procure o carro que está pensando..."}
+                    isLoading={isLoading}
+                    handleSendMessage={handleSendMessage}
+                />
+            </div>
         </main>
     );
 }
