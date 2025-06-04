@@ -19,7 +19,7 @@ const ChatForm = ({ type, placeholder, isLoading, handleSendMessage }) => {
         }
     }
 
-    return <form className="flex items-center mx-auto bg-secondary-bg w-1/2 py-3 px-4 rounded-3xl gap-4">
+    return <form className="flex items-center mx-auto bg-secondary-bg w-full lg:w-1/2 py-3 px-4 rounded-3xl gap-4">
         <input
             className="w-full placeholder:text-sm placeholder:text-secondary outline-0"
             type={type}

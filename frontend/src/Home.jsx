@@ -76,7 +76,8 @@ const Home = () => {
             <PageTitle conversationStarted={conversationStarted} />
             
             <div className={`
-                w-[80%]
+                w-full
+                lg:w-[80%]
                 transition-all ease-in-out duration-1000
                 mb-18
                 ${conversationStarted 
@@ -84,7 +85,7 @@ const Home = () => {
                     : "opacity-0 max-h-0 border-none"
                 }
             `}>
-                <ul className="h-full w-full flex flex-col items-start p-6 gap-8 [&>*:nth-child(odd)]:self-end [&>*:nth-child(odd)]:bg-secondary-bg [&>*:nth-child(even)]:bg-tertiary-bg ">
+                <ul className="h-full w-full flex flex-col items-start py-6 lg:px-6 gap-8 [&>*:nth-child(odd)]:self-end [&>*:nth-child(odd)]:bg-secondary-bg [&>*:nth-child(even)]:bg-tertiary-bg ">
                     {messages.map(msg =>
                         <MessageCard 
                             key={msg.id}
