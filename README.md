@@ -16,10 +16,10 @@ DirigIA é uma aplicação full-stack desenvolvida como parte de um desafio de e
 
 * [Sobre o Projeto](#sobre-o-projeto)
 * [Funcionalidades](#funcionalidades)
-* [:hammer_and_wrench: Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Tecnologias Utilizadas](tecnologias-utilizadas)
 * [Como Executar o Projeto Localmente](#como-executar-o-projeto-localmente)
 * [Decisões Técnicas e Experiência do Usuário](#decisões-técnicas-e-experiência-do-usuário)
-* [:briefcase: Plano de Negócios](#plano-de-negócios)
+* [Plano de Negócios](#plano-de-negócios)
 * [Desenvolvedor](#desenvolvedor)
 
 ## Funcionalidades
@@ -34,7 +34,7 @@ DirigIA é uma aplicação full-stack desenvolvida como parte de um desafio de e
 * Design responsivo e focado na usabilidade.
 * Transições suaves na interface para uma melhor experiência visual.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 <div>
   <img src="https://img.shields.io/badge/react-239120?&style=for-the-badge&logo=react&logoColor=white">
@@ -164,7 +164,7 @@ Pensando na UX os seguintes pontos foram abrangidos:
 - **Design e Estilo:**: Com o tailwind foi desenvolvido uma interface limpa e moderna, e **responsiva**. 
 - **Tom de Voz da IA:** Foi dada atenção especial aos prompts para que a IA do DirigIA seja não apenas funcional, mas também amigável, prestativa e persuasiva.
 
-## 💼 Plano de Negócios
+## Plano de Negócios
 
 Segue a resposta para algumas perguntas relacionadas ao plano de negócios que foram levantadas no desafio:
 
