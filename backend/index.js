@@ -7,8 +7,22 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-app.use(cors());
 app.use(express.json());
+
+const allowedOrigins = [process.env.FRONTEND_URL];
+if (process.env.NODE_ENV !== 'production') {
+    allowedOrigins.push('http://localhost:1337');
+}
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 
 let todosOsCarros = [];
 try {
