@@ -3,9 +3,11 @@ const path = require('path');
 require('dotenv').config();
 const express = require('express');
 const { GoogleGenerativeAI } = require('@google/generative-ai'); // Importa LLM do google
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+app.use(cors());
 app.use(express.json());
 
 let todosOsCarros = [];
