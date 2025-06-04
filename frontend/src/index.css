@@ -8,6 +8,7 @@
 
     --color-main-bg: #131517;
     --color-secondary-bg: #1F2125;
+    --color-tertiary-bg: #191B1F;
 }
 
 @layer base {

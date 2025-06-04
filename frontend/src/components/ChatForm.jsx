@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 
-const ChatForm = ({ type, placeholder, value }) => {
+const ChatForm = ({ type, placeholder, isLoading, handleSendMessage }) => {
     const [inputValue, setInputValue] = useState("");
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
-        if (inputValue.trim() === "") return;
+        if (inputValue.trim() === "" || isLoading ) return;
 
-        alert("Oi");
+        handleSendMessage(inputValue);
     }
 
     const handleKeyDowm = (e) => {
-        if (e.key === "Enter") {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
             handleOnSubmit(e);
         }
     }
