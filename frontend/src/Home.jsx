@@ -94,15 +94,16 @@ const Home = () => {
                         />
                     )}
                     {isLoading &&
-                        <li className="self-center text-sm bg-transparent text-secondary animate-pulse p-2">DirigIA está procurando...</li>
+                        <li className="self-center text-sm bg-none text-secondary animate-pulse p-2 rounded-2xl">DirigIA está procurando...</li>
                     }
+      
                     {error && !isLoading &&
                         <li className="self-center text-sm text-red-400 p-2">{error}</li>
                     }
                     <li ref={messagesEndRef}></li>
                 </ul>
             </div>
-            <div className="w-full p-4 bg-main-bg fixed bottom-4">
+            <div className={`w-full p-4 bg-main-bg bottom-4 ${conversationStarted && "fixed"}`}>
                 <ChatForm
                     type="text"
                     placeholder={conversationStarted ? "Converse com DirigIA..." : "Procure o carro que está pensando..."}
