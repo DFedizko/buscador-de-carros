@@ -4,7 +4,8 @@ import PageTitle from "./components/PageTitle";
 import MessageCard from "./components/MessageCard";
 
 const Home = () => {
-    const BASE_URL = "https://dirigia-buscador-de-carros.onrender.com";
+    const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
     const [conversationStarted, setConversationStarted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [messages, setMessages] = useState([]);
